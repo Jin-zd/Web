@@ -1,0 +1,410 @@
+body{
+    min-width: 1226px;
+}
+
+nav{
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(59, 64, 66);
+    font-size: 11px;
+    position: relative;
+}
+
+nav > div{
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+nav a{
+    display: inline-block;
+    height: 40px;
+    color: #b0b0b0;
+    margin:0 3px;
+    font-size: 10px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+}
+
+#left{
+    margin: 0 3px 0 130px;
+}
+
+#icon1{
+    width: 110px;
+    margin: 0 0 0 26px;
+    line-height: 40px;
+    background-color: rgba(72, 71, 71, 0.8);
+    position: relative;
+}
+
+#icon1:hover{
+    background-color: white;
+    color: orange;
+    border-bottom: none;
+}
+
+#icon1 > #one{
+    display: inline-block;
+    position: absolute;
+    top: 14.5px;
+    left: 16.5px;
+}
+
+#icon1 > #two{
+    display: inline-block;
+    width: 62px;
+    margin: 0 auto 0 35px;
+}
+
+#icon1 > #box2{
+    position: absolute;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    line-height: 100px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+    left: -189px;
+    z-index: 9999;
+    transition: height 0.3s;
+    
+}
+
+#icon1:hover #box2{
+    height: 100px;
+}
+
+#box1{
+    position: relative;
+}
+
+#box1 > #qrcode{
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    line-height: 1;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    z-index: 9999;
+    transition: height 0.3s;
+}
+
+#box1 > #traingle{
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 24px;
+    left: 16px;
+}
+
+#qrcode > img{
+    margin: 17px;
+    margin-bottom: 14px;
+}
+
+#box1:hover #qrcode{
+    height: 148px;
+}
+
+#box1:hover #traingle{
+    border: 8px transparent solid;
+    border-bottom-color: white;
+}
+
+.outer{
+    width: 100%;
+    position: relative;
+}
+
+.header{
+    height: 100px;
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.header > div{
+    float: left;
+}
+
+.header > .picture{
+    height: 55px;
+    width: 55px;
+    margin: 22.5px 179px 22.5px 0;
+    border-radius: 35%;
+    overflow: hidden;
+}
+
+.picture img:active{
+    width: 50px;
+    height: 50px;
+    margin: 2.5px;
+    border-radius: 35%;
+}
+
+.menu{
+    width: 680px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.menu > a{
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 10px;
+}
+
+.menu > a:hover{
+    color: rgb(255, 103, 0);
+}
+
+.menu > #long-box{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    top: 100px;
+    left: 0;
+    z-index: 9999;
+    transition: height 0.3s;
+}
+
+.box3:hover ~ #long-box,
+#long-box:hover{
+    display: block;
+    height: 230px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+    border-top: 1px solid rgb(224, 224, 224);
+}
+
+form{
+    display: inline-block;
+    height: 100px;
+    width: 298px;
+    margin: 0 0 0 14px;
+}
+
+form > input{
+    width: 222px;
+    height: 48px;
+    font-size: 13px;
+    margin: 24px -4px 24px 0;
+    border: 1px rgb(224, 224, 224) solid;
+    padding: 0 10px;
+    border-right: 0;
+    vertical-align: top;
+    color: rgb(117, 117, 117);
+    outline: none;
+}
+
+form div::before{
+    content: '\f002';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+form div{
+    margin: auto 19px;
+}
+
+form > input:focus,
+form > input:focus + a{
+    border-color: #FF6700;
+}
+
+form a{
+    color: black;
+    display: inline-block;
+    font-size: 13px;
+    width: 50px;
+    height: 48px;
+    line-height: 50px;
+    margin: 24px 0 24px;
+    border: 1px rgb(224, 224, 224) solid;
+    padding: 0;
+    background-color: white;
+    text-decoration: none;
+}
+
+form a:hover{
+    color: white;
+    background-color: rgb(255, 103, 0);
+}
+
+main{
+    width: 100%;
+    height: 460px;
+}
+
+main > div{
+    margin: 0 auto;
+    width: 1226px;
+    height: 460px;
+    position: relative;
+}
+
+main > div > a {
+    display: block;
+    width: 1226px;
+    height: 460px;
+    position: absolute;
+}
+
+.circle{
+    width: 80px;
+    height: 6px;
+    position: absolute;
+    z-index: 1;
+    right: 34px;
+    top: 429px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.circle > div{
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    background-color: rgb(124, 125, 126);
+    border: 2px rgb(161, 162, 161) solid;
+    float: left;
+    border-radius: 50%;
+}
+
+.circle > div:hover{
+    background-color: white;
+    
+}
+
+.word{
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+    background-color: rgb(165, 163, 163);
+    position: absolute;
+    top: 0;
+}
+
+main a{
+    display: block;
+    width: 234px;
+    height: 42px;
+    text-decoration: none;
+    color: white;
+    line-height: 42px;
+    position: relative;
+}
+
+#first{
+    margin: 20px 0 0;
+}
+
+main a > span{
+    margin: 0 0 0 31px;
+}
+
+.word > a:hover{
+    background-color: rgb(255, 103, 0);
+}
+
+#box4{
+    position: absolute;
+    width: 992px;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    
+    top: 0;
+    left: 234px;
+    z-index: 9999;
+}
+
+.word > a:hover ~ #box4,
+#box4:hover
+{
+    height: 458px;
+    border: 1px solid rgb(224, 224, 224);
+    border-left: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.icon2::after{
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.icon2{
+    position: absolute;
+    right: 24px;
+}
+
+.footer{
+    height: 210px;
+    width: 100%;
+}
+
+.footer > div{
+    width: 1226px;
+    height: 170px;
+    margin: 20px auto;
+}
+
+.footer > div > ul{
+    width: 234px;
+    height: 170px;
+    background-color: rgb(95, 87, 80);
+    float: left;
+}
+
+.footer ul > li{
+    width: 76px;
+    height: 83px;
+    border-color: rgb(102, 94, 87);
+    border-style: solid;
+    border-width: 1px 0.5px;
+    float: left;
+    margin: 0 auto;
+    line-height: 83px;
+    text-align: center;
+}
+
+.footer ul > li > a{
+    color: rgb(199, 196, 194);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer ul > li > a:hover{
+    color: white;
+}
+
+.footer > div > a{
+    display: block;
+    float: left;
+    margin: 0 7px;
+}
+
+#last{
+    margin: 0 0 0 16px;
+}
+
+.footer > div > a:hover{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
